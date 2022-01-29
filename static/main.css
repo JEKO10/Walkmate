@@ -29,9 +29,11 @@ body header nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 50px;
+  -webkit-animation: opacity 2.5s linear;
+          animation: opacity 2.5s linear;
 }
 
-body header nav #logo {
+body header nav img {
   height: 60px;
 }
 
@@ -71,13 +73,44 @@ body header nav ul li:hover {
   background-position: bottom left;
 }
 
-body header #img {
-  height: 400px;
-  position: absolute;
-  right: 120px;
-  top: 180px;
-  -webkit-transform: rotate(-6deg);
-          transform: rotate(-6deg);
+body header .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 30px 50px;
+  -webkit-animation: opacity 2.5s linear;
+          animation: opacity 2.5s linear;
+}
+
+body header .hero h1 {
+  font-size: 5rem;
+  padding-bottom: 30px;
+}
+
+body header .hero h1 span {
+  color: #01a3a5;
+}
+
+body header .hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+body header .hero p span {
+  text-transform: uppercase;
+  color: #01a3a5;
+  font-weight: 900;
+}
+
+body header .hero > img {
+  height: 450px;
 }
 
 @-webkit-keyframes opacity {

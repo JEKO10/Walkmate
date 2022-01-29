@@ -16,29 +16,26 @@
   <body>
     <header>
       <nav>
-        <img
-          src="{{url_for('.static', filename='logo.png')}}"
-          alt="Logo"
-          id="logo"
-        />
+        <img src="{{url_for('.static', filename='logo.png')}}" alt="Logo" />
         <ul>
           <li>Log in</li>
           <li>Register</li>
         </ul>
       </nav>
       <section class="hero">
-        <h1>Let`s walk together!</h1>
-        <p>
-          Just 30 minutes every day can increase cardiovascular fitness,
-          strengthen bones, reduce excess body fat, and boost muscle power and
-          endurance. It can also reduce your risk of developing conditions such
-          as heart disease, type 2 diabetes, osteoporosis and some cancers.
-        </p>
-        <img
-          src="{{url_for('.static', filename='hiking.png')}}"
-          alt="IMG"
-          id="img"
-        />
+        <div>
+          <h1>
+            Let`s <span>walk</span> <br />
+            together!
+          </h1>
+          <p>
+            Walking is an effective exercise method which boosts your mood and
+            helps you to avoid headaches the whole day. Just 30 minutes every
+            day can increase cardiovascular fitness, reduce excess body fat, and
+            boost muscle power. So let`s <span>walk</span> together!
+          </p>
+        </div>
+        <img src="{{url_for('.static', filename='hiking.png')}}" alt="IMG" />
       </section>
     </header>
   </body>

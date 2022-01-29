@@ -19,8 +19,9 @@ body {
     nav {
       @include flex(space-between, center);
       padding: 30px 50px;
+      animation: opacity 2.5s linear;
 
-      #logo {
+      img {
         height: 60px;
       }
 
@@ -56,12 +57,35 @@ body {
       }
     }
 
-    #img {
-      height: 400px;
-      position: absolute;
-      right: 120px;
-      top: 180px;
-      transform: rotate(-6deg);
+    .hero {
+      @include flex(space-evenly, center);
+      font-family: $primaryFont;
+      padding: 30px 50px;
+      animation: opacity 2.5s linear;
+
+      h1 {
+        font-size: 5rem;
+        padding-bottom: 30px;
+
+        span {
+          color: #01a3a5;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 600px;
+
+        span {
+          text-transform: uppercase;
+          color: #01a3a5;
+          font-weight: 900;
+        }
+      }
+
+      > img {
+        height: 450px;
+      }
     }
   }
 }
