@@ -1,0 +1,7 @@
+$primaryFont: "Work Sans", sans-serif;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
