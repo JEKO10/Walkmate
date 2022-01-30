@@ -1,0 +1,26 @@
+.customers {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: $primaryFont;
+  padding: 30px 50px;
+
+  > div {
+    @include flex(space-around, center);
+  }
+
+  h1 {
+    font-size: 5rem;
+    padding: 10px 0 100px 0;
+    text-align: center;
+
+    span {
+      color: #01a3a5;
+    }
+  }
+
+  img {
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+}

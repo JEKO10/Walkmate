@@ -8,6 +8,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,9 +48,9 @@
       </section>
     </header>
     <section class="about">
-      <h1>Why <span>WalkMate</span>?</h1>
+      <h1 data-aos="fade-down">Why <span>WalkMate</span>?</h1>
       <div class="container">
-        <div>
+        <div data-aos="fade-up">
           <img src="../static/svgs/map.svg" alt="MAP" />
           <h2>Motivation</h2>
           <p>
@@ -56,8 +58,13 @@
             the benefits of a healthier, active lifestyle.
           </p>
         </div>
-        <img src="../static/images/walking.jpg" alt="IMG" id="walking" />
-        <div>
+        <img
+          src="../static/images/walking.jpg"
+          alt="IMG"
+          id="walking"
+          data-aos="zoom-in"
+        />
+        <div data-aos="fade-up">
           <img src="../static/svgs/planet.svg" alt="PLANET" />
           <h2>Positive impact</h2>
           <p>
@@ -66,7 +73,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img src="../static/svgs/friends.svg" alt="FRIEND" />
         <h2>Meet new positive people</h2>
         <p>
@@ -75,5 +82,21 @@
         </p>
       </div>
     </section>
+    <section class="customers">
+      <h1><span>Satisfied</span> Customers</h1>
+      <div>
+        <div>
+          <img src="../static/mates/person-2.png" alt="IMG" />
+          <img src="../static/mates/person-3.png" alt="IMG" />
+        </div>
+        <div>
+          <img src="../static/mates/person-4.png" alt="IMG" />
+          <img src="../static/mates/person-1.jpg" alt="IMG" />
+        </div>
+      </div>
+    </section>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
