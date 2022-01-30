@@ -1,4 +1,6 @@
 @import "config";
+@import "header";
+@import "about";
 
 * {
   margin: 0;
@@ -8,93 +10,4 @@
 
 body {
   background-color: #000;
-
-  header {
-    min-height: 100vh;
-    animation: opacity 1.5s linear;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("./bg3.jpg") center/cover no-repeat;
-    color: #fff;
-
-    nav {
-      @include flex(space-between, center);
-      padding: 30px 50px;
-      animation: opacity 2.5s linear;
-
-      img {
-        height: 60px;
-      }
-
-      ul {
-        @include flex(center, center);
-        list-style-type: none;
-
-        li {
-          color: #fff;
-          padding: 5px 20px;
-          margin: 0 10px;
-          font-size: 1rem;
-          text-transform: uppercase;
-          font-family: $primaryFont;
-          font-weight: 500;
-          cursor: pointer;
-          // border: 3px solid #88c625;
-          border: 3px solid #01a3a5;
-          border-radius: 50px;
-          background-image: linear-gradient(
-            to top,
-            #003d66 50%,
-            transparent 50%
-          );
-          background-size: 100% 200%;
-          background-position: top;
-          transition: all 300ms linear;
-
-          &:hover {
-            background-position: bottom left;
-          }
-        }
-      }
-    }
-
-    .hero {
-      @include flex(space-evenly, center);
-      font-family: $primaryFont;
-      padding: 30px 50px;
-      animation: opacity 2.5s linear;
-
-      h1 {
-        font-size: 5rem;
-        padding-bottom: 30px;
-
-        span {
-          color: #01a3a5;
-        }
-      }
-
-      p {
-        font-size: 1.2rem;
-        max-width: 600px;
-
-        span {
-          text-transform: uppercase;
-          color: #01a3a5;
-          font-weight: 900;
-        }
-      }
-
-      > img {
-        height: 450px;
-      }
-    }
-  }
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
 }

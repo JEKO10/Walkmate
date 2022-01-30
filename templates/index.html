@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav>
-        <img src="{{url_for('.static', filename='logo.png')}}" alt="Logo" />
+        <img src="../static/images/logo.png" alt="Logo" />
         <ul>
           <li>Log in</li>
           <li>Register</li>
@@ -35,8 +35,45 @@
             boost muscle power. So let`s <span>walk</span> together!
           </p>
         </div>
-        <img src="{{url_for('.static', filename='hiking.png')}}" alt="IMG" />
+        <!-- <p>
+          WalkMate invites you to find fun in fitness and reap the benefits of a
+          healthier, active lifestyle. Walking does as much for your mind as it
+          does your body. On our platform you can find
+          <span>mate</span>
+          to <span>practice</span> or <span>walk</span> with.
+        </p> -->
+        <img src="../static/images/hiking.png" alt="IMG" />
       </section>
     </header>
+    <section class="about">
+      <h1>Why <span>WalkMate</span>?</h1>
+      <div class="container">
+        <div>
+          <img src="../static/svgs/map.svg" alt="MAP" />
+          <h2>Motivation</h2>
+          <p>
+            WalkMate invites you to find fun in fitness and reap the benefits of
+            a healthier, active lifestyle.
+          </p>
+        </div>
+        <img src="../static/images/walking.jpg" alt="IMG" id="walking" />
+        <div>
+          <img src="../static/svgs/planet.svg" alt="PLANET" />
+          <h2>Positive impact</h2>
+          <p>
+            Just 30 minutes every day can strengthen bones, reduce excess body
+            fat, and boost muscle power and endurance.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="../static/svgs/friends.svg" alt="FRIEND" />
+        <h2>Meet new positive people</h2>
+        <p>
+          With WalkMate you can contact people from your town, with similar
+          interests to walk with. It`s interesting and healthy!
+        </p>
+      </div>
+    </section>
   </body>
 </html>

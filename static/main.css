@@ -1,24 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: #000;
-}
-
-body header {
-  min-height: 100vh;
+header {
+  min-height: 95vh;
   -webkit-animation: opacity 1.5s linear;
           animation: opacity 1.5s linear;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("./bg3.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./bg3.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url("./images/bg3.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("./images/bg3.jpg") center/cover no-repeat;
   color: #fff;
 }
 
-body header nav {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,11 +22,11 @@ body header nav {
           animation: opacity 2.5s linear;
 }
 
-body header nav img {
+header nav img {
   height: 60px;
 }
 
-body header nav ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +39,7 @@ body header nav ul {
   list-style-type: none;
 }
 
-body header nav ul li {
+header nav ul li {
   color: #fff;
   padding: 5px 20px;
   margin: 0 10px;
@@ -69,11 +58,11 @@ body header nav ul li {
   transition: all 300ms linear;
 }
 
-body header nav ul li:hover {
+header nav ul li:hover {
   background-position: bottom left;
 }
 
-body header .hero {
+header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,27 +78,27 @@ body header .hero {
           animation: opacity 2.5s linear;
 }
 
-body header .hero h1 {
+header .hero h1 {
   font-size: 5rem;
   padding-bottom: 30px;
 }
 
-body header .hero h1 span {
+header .hero h1 span {
   color: #01a3a5;
 }
 
-body header .hero p {
+header .hero p {
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 550px;
 }
 
-body header .hero p span {
+header .hero p span {
   text-transform: uppercase;
   color: #01a3a5;
   font-weight: 900;
 }
 
-body header .hero > img {
+header .hero img {
   height: 450px;
 }
 
@@ -129,5 +118,23 @@ body header .hero > img {
   to {
     opacity: 1;
   }
+}
+
+.about {
+  background-color: #bce8eb;
+  min-height: 95vh;
+  font-family: "Work Sans", sans-serif;
+  padding: 30px 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
 }
 /*# sourceMappingURL=main.css.map */
