@@ -188,7 +188,7 @@ header .hero img {
   padding: 30px 50px;
 }
 
-.customers > div {
+.customers .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,6 +197,51 @@ header .hero img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.customers .container > article {
+  background: url("./images/bg-triangle.svg") top no-repeat;
+  background-size: 50% 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customers .container > article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers .container > article h2 {
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.customers .container > article h4 {
+  font-weight: 500;
+}
+
+.customers .container > article h1 {
+  font-size: 2.5rem;
+  padding-top: 100px;
 }
 
 .customers h1 {
