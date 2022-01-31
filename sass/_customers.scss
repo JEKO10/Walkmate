@@ -3,13 +3,12 @@
   background-color: #fff;
   font-family: $primaryFont;
   padding: 30px 50px;
+  position: relative;
 
   .container {
     @include flex(space-around, center);
 
     > article {
-      background: url("./images/bg-triangle.svg") top no-repeat;
-      background-size: 50% 70%;
       @include flex(center, center);
       text-align: center;
       flex-direction: column;
@@ -23,20 +22,15 @@
         padding-top: 20px;
       }
 
-      h4 {
+      h3 {
         font-weight: 500;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        padding-top: 100px;
       }
     }
   }
 
-  h1 {
+  #title {
     font-size: 5rem;
-    padding: 10px 0 100px 0;
+    padding: 10px 0 80px 0;
     text-align: center;
 
     span {
@@ -48,5 +42,16 @@
     height: 200px;
     border-radius: 50%;
     margin: 0 20px;
+  }
+
+  ul {
+    margin-top: 8rem;
+    list-style-type: disc;
+    @include flex(space-around, center);
+  }
+
+  li {
+    font-size: 2rem;
+    font-weight: 500;
   }
 }

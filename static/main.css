@@ -186,6 +186,7 @@ header .hero img {
   background-color: #fff;
   font-family: "Work Sans", sans-serif;
   padding: 30px 50px;
+  position: relative;
 }
 
 .customers .container {
@@ -200,8 +201,6 @@ header .hero img {
 }
 
 .customers .container > article {
-  background: url("./images/bg-triangle.svg") top no-repeat;
-  background-size: 50% 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,22 +234,17 @@ header .hero img {
   padding-top: 20px;
 }
 
-.customers .container > article h4 {
+.customers .container > article h3 {
   font-weight: 500;
 }
 
-.customers .container > article h1 {
-  font-size: 2.5rem;
-  padding-top: 100px;
-}
-
-.customers h1 {
+.customers #title {
   font-size: 5rem;
-  padding: 10px 0 100px 0;
+  padding: 10px 0 80px 0;
   text-align: center;
 }
 
-.customers h1 span {
+.customers #title span {
   color: #01a3a5;
 }
 
@@ -258,6 +252,24 @@ header .hero img {
   height: 200px;
   border-radius: 50%;
   margin: 0 20px;
+}
+
+.customers ul {
+  margin-top: 8rem;
+  list-style-type: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers li {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 * {
