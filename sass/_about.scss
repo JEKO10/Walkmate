@@ -1,8 +1,13 @@
 .about {
-  background-color: #283a2c;
+  background: rgb(46, 66, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 66, 16, 1) 0%,
+    rgba(43, 66, 8, 0.4573179613642332) 100%
+  );
   min-height: 100vh;
   font-family: $primaryFont;
-  padding: 30px 50px;
+  padding: 30px 50px 60px 50px;
   color: #fff;
 
   div {
@@ -36,7 +41,7 @@
     font-weight: 400;
   }
 
-  .container {
+  > div {
     @include flex(space-evenly, center);
     padding-bottom: 30px;
 
@@ -48,6 +53,11 @@
         rgba(40, 58, 44, 0.7) 0%,
         rgba(40, 58, 44, 0.6) 100%
       );
+    }
+
+    img:not(#walking) {
+      height: 40px;
+      width: 40px;
     }
   }
 }

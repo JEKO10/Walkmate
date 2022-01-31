@@ -2,8 +2,8 @@ header {
   min-height: 95vh;
   -webkit-animation: opacity 1.5s linear;
           animation: opacity 1.5s linear;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url("./images/bg3.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("./images/bg3.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(17, 32, 0, 0.6))), url("./images/bg3.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(17, 32, 0, 0.6)), url("./images/bg3.jpg") center/cover no-repeat;
   color: #fff;
 }
 
@@ -121,10 +121,12 @@ header .hero img {
 }
 
 .about {
-  background-color: #283a2c;
+  background: #2e4210;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2e4210), to(rgba(43, 66, 8, 0.457318)));
+  background: linear-gradient(180deg, #2e4210 0%, rgba(43, 66, 8, 0.457318) 100%);
   min-height: 100vh;
   font-family: "Work Sans", sans-serif;
-  padding: 30px 50px;
+  padding: 30px 50px 60px 50px;
   color: #fff;
 }
 
@@ -159,7 +161,7 @@ header .hero img {
   font-weight: 400;
 }
 
-.about .container {
+.about > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +174,7 @@ header .hero img {
   padding-bottom: 30px;
 }
 
-.about .container #walking {
+.about > div #walking {
   height: 350px;
   border-radius: 5px;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 44, 0.7)), to(rgba(40, 58, 44, 0.6)));
@@ -181,11 +183,16 @@ header .hero img {
           mask-image: linear-gradient(to bottom, rgba(40, 58, 44, 0.7) 0%, rgba(40, 58, 44, 0.6) 100%);
 }
 
+.about > div img:not(#walking) {
+  height: 40px;
+  width: 40px;
+}
+
 .customers {
   min-height: 100vh;
   background-color: #fff;
   font-family: "Work Sans", sans-serif;
-  padding: 30px 50px;
+  padding: 30px 50px 25rem 50px;
   position: relative;
 }
 
@@ -238,13 +245,13 @@ header .hero img {
   font-weight: 500;
 }
 
-.customers #title {
+.customers h1 {
   font-size: 5rem;
   padding: 10px 0 80px 0;
   text-align: center;
 }
 
-.customers #title span {
+.customers h1 span {
   color: #01a3a5;
 }
 
@@ -254,22 +261,14 @@ header .hero img {
   margin: 0 20px;
 }
 
-.customers ul {
-  margin-top: 8rem;
-  list-style-type: disc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.end {
+  min-height: 100vh;
+  background: url("./images/mountain.jpg") center/cover no-repeat;
 }
 
-.customers li {
-  font-size: 2rem;
-  font-weight: 500;
+.end img {
+  height: 100%;
+  width: 100%;
 }
 
 * {
