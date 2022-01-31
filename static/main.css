@@ -247,7 +247,7 @@ header .hero img {
 
 .customers h1 {
   font-size: 5rem;
-  padding: 10px 0 80px 0;
+  padding: 10px 0 90px 0;
   text-align: center;
 }
 
@@ -262,13 +262,21 @@ header .hero img {
 }
 
 .end {
-  min-height: 100vh;
+  position: relative;
+  height: 900px;
   background: url("./images/mountain.jpg") center/cover no-repeat;
 }
 
 .end img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   height: 100%;
   width: 100%;
+}
+
+footer {
+  min-height: 40vh;
 }
 
 * {

@@ -1,9 +1,17 @@
 .end {
-  min-height: 100vh;
+  position: relative;
+  height: 900px;
   background: url("./images/mountain.jpg") center/cover no-repeat;
 
   img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     height: 100%;
     width: 100%;
   }
+}
+
+footer {
+  min-height: 40vh;
 }
