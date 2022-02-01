@@ -1,14 +1,12 @@
 footer {
   @include flex(space-between, center);
-  min-height: 30vh;
-  padding: 0 50px;
+  padding: 90px 50px;
   background: rgb(46, 66, 16);
   background: linear-gradient(
     180deg,
     rgba(46, 66, 16, 1) 66%,
     rgba(46, 66, 16, 0.5) 100%
   );
-  //   background: #daddc5;
 
   ul {
     @include flex(center, center);

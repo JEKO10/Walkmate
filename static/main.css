@@ -275,6 +275,50 @@ header .hero img {
   width: 100%;
 }
 
+.register {
+  position: relative;
+  background: #daddc5;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 150px 50px;
+}
+
+.register h1 {
+  font-size: 3rem;
+}
+
+.register h2 span {
+  text-transform: uppercase;
+  color: #01a3a5;
+}
+
+.register img {
+  position: absolute;
+  right: 90px;
+  bottom: 30px;
+  height: 50px;
+  -webkit-animation: position infinite 500ms alternate;
+          animation: position infinite 500ms alternate;
+}
+
+@-webkit-keyframes position {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 35px;
+  }
+}
+
+@keyframes position {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 35px;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,8 +329,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 30vh;
-  padding: 0 50px;
+  padding: 90px 50px;
   background: #2e4210;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(66%, #2e4210), to(rgba(46, 66, 16, 0.5)));
   background: linear-gradient(180deg, #2e4210 66%, rgba(46, 66, 16, 0.5) 100%);

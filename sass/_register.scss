@@ -1,0 +1,33 @@
+.register {
+  position: relative;
+  background: #daddc5;
+  text-align: center;
+  font-family: $primaryFont;
+  padding: 150px 50px;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 span {
+    text-transform: uppercase;
+    color: #01a3a5;
+  }
+
+  img {
+    position: absolute;
+    right: 90px;
+    bottom: 30px;
+    height: 50px;
+    animation: position infinite 500ms alternate;
+  }
+}
+
+@keyframes position {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 35px;
+  }
+}
