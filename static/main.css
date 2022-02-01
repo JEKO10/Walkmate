@@ -72,7 +72,6 @@ header .hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Work Sans", sans-serif;
   padding: 30px 50px;
   -webkit-animation: opacity 2.5s linear;
           animation: opacity 2.5s linear;
@@ -125,7 +124,6 @@ header .hero img {
   background: -webkit-gradient(linear, left top, left bottom, from(#2e4210), to(rgba(43, 66, 8, 0.457318)));
   background: linear-gradient(180deg, #2e4210 0%, rgba(43, 66, 8, 0.457318) 100%);
   min-height: 100vh;
-  font-family: "Work Sans", sans-serif;
   padding: 30px 50px 60px 50px;
   color: #fff;
 }
@@ -191,7 +189,6 @@ header .hero img {
 .customers {
   min-height: 100vh;
   background-color: #fff;
-  font-family: "Work Sans", sans-serif;
   padding: 30px 50px 25rem 50px;
   position: relative;
 }
@@ -264,6 +261,7 @@ header .hero img {
 .end {
   position: relative;
   height: 900px;
+  font-family: "Noto Serif Display", serif;
   background: url("./images/mountain.jpg") center/cover no-repeat;
 }
 
@@ -275,11 +273,27 @@ header .hero img {
   width: 100%;
 }
 
+.end h1 {
+  position: absolute;
+  left: 30%;
+  bottom: 20%;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.end h2 {
+  position: absolute;
+  left: 40%;
+  bottom: 15%;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .register {
   position: relative;
   background: #daddc5;
   text-align: center;
-  font-family: "Work Sans", sans-serif;
   padding: 150px 50px;
 }
 
@@ -354,7 +368,6 @@ footer ul li {
   margin: 0 10px;
   font-size: 1rem;
   text-transform: uppercase;
-  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   cursor: pointer;
   border: 3px solid #01a3a5;
@@ -377,5 +390,10 @@ footer ul li:hover {
 
 body {
   background-color: #000;
+}
+
+section,
+footer {
+  font-family: "Work Sans", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

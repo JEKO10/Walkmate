@@ -45,7 +45,6 @@ header {
 
   .hero {
     @include flex(space-evenly, center);
-    font-family: $primaryFont;
     padding: 30px 50px;
     animation: opacity 2.5s linear;
 

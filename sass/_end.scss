@@ -1,6 +1,7 @@
 .end {
   position: relative;
   height: 900px;
+  font-family: "Noto Serif Display", serif;
   background: url("./images/mountain.jpg") center/cover no-repeat;
 
   img {
@@ -9,5 +10,22 @@
     right: 0;
     height: 100%;
     width: 100%;
+  }
+
+  h1 {
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  h2 {
+    position: absolute;
+    left: 40%;
+    bottom: 15%;
+    font-weight: 600;
+    font-style: italic;
   }
 }
