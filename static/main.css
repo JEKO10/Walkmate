@@ -368,7 +368,8 @@ footer ul li:hover {
   background-color: #fff;
 }
 
-.login {
+.login,
+.registerPage {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.7))), url("./images/bg.jpg") center/cover no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.7)), url("./images/bg.jpg") center/cover no-repeat;
   min-height: 100vh;
@@ -378,7 +379,8 @@ footer ul li:hover {
           animation: opacity 1s linear;
 }
 
-.login form {
+.login form,
+.registerPage form {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
@@ -386,12 +388,14 @@ footer ul li:hover {
           animation: opacity 1s linear;
 }
 
-.login form label {
+.login form label,
+.registerPage form label {
   text-transform: capitalize;
   font-weight: normal;
 }
 
-.login form button {
+.login form button,
+.registerPage form button {
   background: #01a3a5;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;

@@ -1,3 +1,7 @@
+{% extends "bootstrap/base.html" %} {% import "bootstrap/wtf.html" as wtf %} {%
+block title %} Walkmate - Register {% endblock %} {% block styles %} {{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
+{% endblock %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    Register Here!
+    <section class="registerPage">
+      <form method="POST" action="/signup">
+        <h2>Register</h2>
+        {{ form.hidden_tag() }} {{ wtf.form_field(form.username) }} {{
+        wtf.form_field(form.email) }} {{ wtf.form_field(form.password) }} {{
+        wtf.form_field(form.facebook) }} {{ wtf.form_field(form.location) }}
+        <button class="btn btn-lg btn-block" type="submit">Register</button>
+      </form>
+    </section>
   </body>
 </html>
+
+{% endblock %}
