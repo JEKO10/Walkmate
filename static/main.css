@@ -40,7 +40,6 @@ header nav ul {
 }
 
 header nav ul li {
-  color: #fff;
   padding: 5px 20px;
   margin: 0 10px;
   font-size: 1rem;
@@ -60,6 +59,11 @@ header nav ul li {
 
 header nav ul li:hover {
   background-position: bottom left;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 header .hero {
@@ -99,24 +103,6 @@ header .hero p span {
 
 header .hero img {
   height: 450px;
-}
-
-@-webkit-keyframes opacity {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .about {
@@ -382,6 +368,35 @@ footer ul li:hover {
   background-color: #fff;
 }
 
+.login {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.7))), url("./images/bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.7)), url("./images/bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding: 40px 0;
+  color: #fff;
+  -webkit-animation: opacity 1s linear;
+          animation: opacity 1s linear;
+}
+
+.login form {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  -webkit-animation: opacity 1s linear;
+          animation: opacity 1s linear;
+}
+
+.login form label {
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.login form button {
+  background: #01a3a5;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -396,5 +411,23 @@ body {
 section,
 footer {
   font-family: "Work Sans", sans-serif;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+.login {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.7)),
+    url("./images/bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding: 40px 0;
+  color: #fff;
+  animation: opacity 1s linear;
+
+  form {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    animation: opacity 1s linear;
+
+    label {
+      text-transform: capitalize;
+      font-weight: normal;
+    }
+
+    button {
+      background: #01a3a5;
+      transition: all 500ms ease;
+    }
+  }
+}

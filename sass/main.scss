@@ -5,6 +5,7 @@
 @import "end";
 @import "register";
 @import "footer";
+@import "login";
 
 * {
   margin: 0;
@@ -19,4 +20,13 @@ body {
 section,
 footer {
   font-family: $primaryFont;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }

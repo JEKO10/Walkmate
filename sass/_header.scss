@@ -20,7 +20,6 @@ header {
       list-style-type: none;
 
       li {
-        color: #fff;
         padding: 5px 20px;
         margin: 0 10px;
         font-size: 1rem;
@@ -38,6 +37,11 @@ header {
 
         &:hover {
           background-position: bottom left;
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
         }
       }
     }
@@ -78,14 +82,5 @@ header {
     img {
       height: 450px;
     }
-  }
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
   }
 }
