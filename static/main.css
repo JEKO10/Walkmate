@@ -188,7 +188,7 @@ header .hero img {
 
 .customers {
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #c8e3f4;
   padding: 30px 50px 25rem 50px;
   position: relative;
 }
@@ -238,7 +238,7 @@ header .hero img {
   padding-top: 20px;
 }
 
-.customers .container > article h3 {
+.customers .container > article h4 {
   font-weight: 500;
 }
 
@@ -255,14 +255,14 @@ header .hero img {
 .customers img {
   height: 200px;
   border-radius: 50%;
-  margin: 0 20px;
+  margin: 0 40px;
 }
 
 .end {
   position: relative;
   height: 900px;
   font-family: "Noto Serif Display", serif;
-  background: url("./images/mountain.jpg") center/cover no-repeat;
+  background: url("./images/end.jpg") center/cover no-repeat;
 }
 
 .end img {
@@ -271,6 +271,7 @@ header .hero img {
   right: 0;
   height: 100%;
   width: 100%;
+  opacity: 0.9;
 }
 
 .end h1 {
