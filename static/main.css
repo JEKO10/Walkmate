@@ -349,21 +349,22 @@ footer ul {
   list-style-type: none;
 }
 
-footer ul li {
+footer ul a {
   color: #fff;
-  padding: 5px 20px;
-  margin: 0 10px;
+  text-decoration: none;
   font-size: 1rem;
-  text-transform: uppercase;
   font-weight: 500;
-  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 10px;
+  padding: 5px 20px;
   border: 3px solid #01a3a5;
   border-radius: 50px;
+  cursor: pointer;
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
 }
 
-footer ul li:hover {
+footer ul a:hover {
   color: #01a3a5;
   background-color: #fff;
 }

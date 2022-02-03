@@ -12,16 +12,17 @@ footer {
     @include flex(center, center);
     list-style-type: none;
 
-    li {
+    a {
       color: #fff;
-      padding: 5px 20px;
-      margin: 0 10px;
+      text-decoration: none;
       font-size: 1rem;
-      text-transform: uppercase;
       font-weight: 500;
-      cursor: pointer;
+      text-transform: uppercase;
+      margin: 0 10px;
+      padding: 5px 20px;
       border: 3px solid #01a3a5;
       border-radius: 50px;
+      cursor: pointer;
       transition: all 500ms linear;
 
       &:hover {
