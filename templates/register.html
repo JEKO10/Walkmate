@@ -11,7 +11,7 @@ block title %} Walkmate - Register {% endblock %} {% block styles %} {{super()}}
   </head>
   <body>
     <section class="registerPage">
-      <form method="POST" action="/signup">
+      <form method="POST" action="/register">
         <h2>Register</h2>
         {{ form.hidden_tag() }} {{ wtf.form_field(form.username) }} {{
         wtf.form_field(form.email) }} {{ wtf.form_field(form.password) }} {{
