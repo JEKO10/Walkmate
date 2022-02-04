@@ -1,5 +1,4 @@
-{% import "bootstrap/wtf.html" as wtf %} {% block title %} Walkmate - Dashboard
-{% endblock %} {% block content %}
+{% import "bootstrap/wtf.html" as wtf %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,14 +12,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
+    <title>Walkmate - Dashboard</title>
   </head>
   <body class="dashboardBody">
     <nav class="dashboardNav">
-      <a href="{{ url_for('logout') }}">Log Out</a>
+      <img src="../static/images/logo.png" alt="Logo" />
       <form>
         <input type="text" placeholder="Search your location..." />
-        <input type="submit" id="submit" />
+        <button>Submit</button>
       </form>
+      <a href="{{ url_for('logout') }}">Log Out</a>
     </nav>
     <section class="dashboard">
       <h1>Welcome, USERNAME</h1>

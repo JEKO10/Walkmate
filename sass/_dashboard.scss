@@ -3,11 +3,49 @@
   font-family: $primaryFont;
 
   .dashboardNav {
-    background-color: #eeea;
-    min-height: 10vh;
-  }
+    background-color: #003d66;
+    @include flex(space-between, center);
+    padding: 30px 40px;
 
-  .dashboard {
-    min-height: 80vh;
+    img {
+      height: 60px;
+    }
+
+    input {
+      border-radius: 10px;
+      padding: 10px 10px 10px 15px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      background: none;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 10px 15px;
+      transition: all 500ms ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fff;
+        color: #003d66;
+      }
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 10px 20px;
+      transition: all 500ms ease;
+
+      &:hover {
+        background-color: #fff;
+        color: #003d66;
+      }
+    }
   }
 }
