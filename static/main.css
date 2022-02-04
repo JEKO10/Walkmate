@@ -402,6 +402,20 @@ footer ul a:hover {
   transition: all 500ms ease;
 }
 
+.dashboardBody {
+  background-color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+.dashboardBody .dashboardNav {
+  background-color: #eeea;
+  min-height: 10vh;
+}
+
+.dashboardBody .dashboard {
+  min-height: 80vh;
+}
+
 * {
   margin: 0;
   padding: 0;

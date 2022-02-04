@@ -1,0 +1,13 @@
+.dashboardBody {
+  background-color: #fff;
+  font-family: $primaryFont;
+
+  .dashboardNav {
+    background-color: #eeea;
+    min-height: 10vh;
+  }
+
+  .dashboard {
+    min-height: 80vh;
+  }
+}

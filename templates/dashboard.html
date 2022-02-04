@@ -1,11 +1,54 @@
+{% import "bootstrap/wtf.html" as wtf %} {% block title %} Walkmate - Dashboard
+{% endblock %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&family=Noto+Serif+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
   </head>
-  <body>
-    <a href="{{ url_for('logout') }}">log Out</a>
+  <body class="dashboardBody">
+    <nav class="dashboardNav">
+      <a href="{{ url_for('logout') }}">Log Out</a>
+      <form>
+        <input type="text" placeholder="Search your location..." />
+        <input type="submit" id="submit" />
+      </form>
+    </nav>
+    <section class="dashboard">
+      <h1>Welcome, USERNAME</h1>
+      <div>
+        <h3>Monica</h3>
+        <h3>Robert</h3>
+        <h3>James</h3>
+        <h3>Emma</h3>
+      </div>
+      <h2>All users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Facebook</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <h3>Username</h3>
+          <h3>Email</h3>
+          <h3>Facebook</h3>
+          <h3>Location</h3>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>
+{% endblock %}
