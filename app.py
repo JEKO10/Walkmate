@@ -88,6 +88,8 @@ def register():
         db.session.add(new_user)
         db.session.commit()
 
+        return redirect(url_for('login'))
+
     return render_template("register.html", form=form)
 
 
@@ -95,6 +97,13 @@ def register():
 @login_required
 def dashboard():
     return render_template("dashboard.html")
+
+
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for("index"))
 
 
 if (__name__) == "__main__":
