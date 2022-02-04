@@ -1,4 +1,5 @@
-{% import "bootstrap/wtf.html" as wtf %} {% block content %}
+{% extends "bootstrap/base.html" %} {% import "bootstrap/wtf.html" as wtf %} {%
+block title %} Walkmate - Dashboard {% endblock %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
-    <title>Walkmate - Dashboard</title>
   </head>
   <body class="dashboardBody">
     <nav class="dashboardNav">
@@ -25,30 +25,74 @@
     </nav>
     <section class="dashboard">
       <h1>Welcome, USERNAME</h1>
-      <div>
-        <h3>Monica</h3>
-        <h3>Robert</h3>
-        <h3>James</h3>
-        <h3>Emma</h3>
+      <div class="bestCustomers">
+        <div>
+          <img src="../static/mates/person-2.png" alt="IMG" />
+          <h3>Monica</h3>
+          <h4>( 1.739km )</h4>
+        </div>
+        <div>
+          <img src="../static/mates/person-3.png" alt="IMG" />
+          <h3>Robert</h3>
+          <h4>( 1.454km )</h4>
+        </div>
+        <div>
+          <img src="../static/mates/person-4.png" alt="IMG" />
+          <h3>James</h3>
+          <h4>( 1.469km )</h4>
+        </div>
+        <div>
+          <img src="../static/mates/person-1.jpg" alt="IMG" />
+          <h3>Emma</h3>
+          <h4>( 1.352km )</h4>
+        </div>
       </div>
-      <h2>All users</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>User id</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Facebook</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <h3>Username</h3>
-          <h3>Email</h3>
-          <h3>Facebook</h3>
-          <h3>Location</h3>
-        </tbody>
-      </table>
+      <h1>All users</h1>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>User id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Facebook</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>username</td>
+              <td>email</td>
+              <td>facebook</td>
+              <td>location</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h1>Users from given Location</h1>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>User id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Facebook</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>username</td>
+              <td>email</td>
+              <td>facebook</td>
+              <td>location</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </body>
 </html>
