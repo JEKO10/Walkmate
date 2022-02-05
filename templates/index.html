@@ -20,6 +20,7 @@
       <nav>
         <img src="../static/images/logo.png" alt="Logo" />
         <ul>
+          <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
           <li><a href="{{ url_for('login') }}">Log in</a></li>
           <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
@@ -140,6 +141,7 @@
       <img src="../static/images/logo.png" alt="Logo" />
       <ul>
         <li><a href="#">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
         <li><a href="{{ url_for('login') }}">Log in</a></li>
         <li><a href="{{ url_for('register') }}">Register</a></li>
       </ul>

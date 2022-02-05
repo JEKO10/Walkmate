@@ -18,13 +18,13 @@ block title %} Walkmate - Dashboard {% endblock %} {% block content %}
     <nav class="dashboardNav">
       <img src="../static/images/logo.png" alt="Logo" />
       <form>
-        <input type="text" placeholder="Search your location..." />
-        <button>Submit</button>
+        <input type="text" name="loc" placeholder="Search your location..." />
+        <button type="submit">Submit</button>
       </form>
       <a href="{{ url_for('logout') }}">Log Out</a>
     </nav>
     <section class="dashboard">
-      <h1>Welcome, USERNAME</h1>
+      <h1>Welcome, {{ name }}</h1>
       <div class="bestCustomers">
         <div>
           <img src="../static/mates/person-2.png" alt="IMG" />
@@ -60,17 +60,19 @@ block title %} Walkmate - Dashboard {% endblock %} {% block content %}
             </tr>
           </thead>
           <tbody>
+            {% for user in users %}
             <tr>
-              <td>id</td>
-              <td>username</td>
-              <td>email</td>
-              <td>facebook</td>
-              <td>location</td>
+              <td>{{ user.id }}</td>
+              <td>{{ user.username }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.facebook }}</td>
+              <td>{{ user.location }}</td>
             </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>
-      <h1>Users from given Location</h1>
+      <h1>Users from {{ inputValue }}</h1>
       <div class="table-responsive">
         <table class="table table-striped">
           <thead>
@@ -83,17 +85,25 @@ block title %} Walkmate - Dashboard {% endblock %} {% block content %}
             </tr>
           </thead>
           <tbody>
+            {% for userOne in userLocation %}
             <tr>
-              <td>id</td>
-              <td>username</td>
-              <td>email</td>
-              <td>facebook</td>
-              <td>location</td>
+              <td>{{ userOne.id }}</td>
+              <td>{{ userOne.username }}</td>
+              <td>{{ userOne.email }}</td>
+              <td>{{ userOne.facebook }}</td>
+              <td>{{ userOne.location }}</td>
             </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>
     </section>
+    <footer>
+      <img src="../static/images/logo.png" alt="Logo" />
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
 {% endblock %}

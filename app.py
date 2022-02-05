@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from flask_wtf import FlaskForm
 from flask_bootstrap import Bootstrap
 from wtforms import StringField, BooleanField, PasswordField
@@ -96,7 +96,12 @@ def register():
 @app.route("/dashboard")
 @login_required
 def dashboard():
-    return render_template("dashboard.html")
+    users = User.query.filter().all()
+    inputValue = request.args.get('loc')
+    if(inputValue == None):
+        inputValue = "searched location"
+    userLocation = User.query.filter_by(location=inputValue).all()
+    return render_template('dashboard.html', users=users, name=current_user.username, userLocation=userLocation, inputValue=inputValue)
 
 
 @app.route("/logout")
