@@ -104,6 +104,11 @@ def dashboard():
     return render_template('dashboard.html', users=users, name=current_user.username, userLocation=userLocation, inputValue=inputValue)
 
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
 @app.route("/logout")
 @login_required
 def logout():
