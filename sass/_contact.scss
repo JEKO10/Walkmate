@@ -1,0 +1,45 @@
+.contactBody {
+  background-color: #fff;
+  font-family: $primaryFont;
+
+  nav {
+    background-color: #003d66;
+    @include flex(space-between, center);
+    padding: 30px 40px;
+
+    img {
+      height: 60px;
+    }
+
+    ul {
+      @include flex(space-between, center);
+      list-style-type: none;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 0 0.5rem;
+        transition: all 500ms linear;
+
+        &:hover {
+          background-color: #fff;
+          color: #003d66;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 40px 0;
+
+    span {
+      color: #01a3a5;
+      text-transform: uppercase;
+    }
+  }
+}

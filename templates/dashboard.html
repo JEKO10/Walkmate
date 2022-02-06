@@ -15,7 +15,7 @@ block title %} Walkmate - Dashboard {% endblock %} {% block content %}
     <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
   </head>
   <body class="dashboardBody">
-    <nav class="dashboardNav">
+    <nav>
       <img src="../static/images/logo.png" alt="Logo" />
       <form>
         <input type="text" name="loc" placeholder="Search your location..." />
@@ -103,6 +103,9 @@ block title %} Walkmate - Dashboard {% endblock %} {% block content %}
       <ul>
         <li><a href="{{ url_for('index') }}">Home</a></li>
         <li><a href="{{ url_for('contact') }}">How to contact mates</a></li>
+        <li>
+          <a href="{{ url_for('logout') }}">Log Out</a>
+        </li>
       </ul>
     </footer>
   </body>

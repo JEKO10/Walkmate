@@ -372,7 +372,7 @@ header .hero img {
   font-family: "Work Sans", sans-serif;
 }
 
-.dashboardBody .dashboardNav {
+.dashboardBody nav {
   background-color: #003d66;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,18 +386,18 @@ header .hero img {
   padding: 30px 40px;
 }
 
-.dashboardBody .dashboardNav img {
+.dashboardBody nav img {
   height: 60px;
 }
 
-.dashboardBody .dashboardNav input {
+.dashboardBody nav input {
   border-radius: 10px;
   padding: 10px 10px 10px 15px;
   border: none;
   outline: none;
 }
 
-.dashboardBody .dashboardNav button {
+.dashboardBody nav button {
   background: none;
   color: #fff;
   text-decoration: none;
@@ -409,12 +409,12 @@ header .hero img {
   cursor: pointer;
 }
 
-.dashboardBody .dashboardNav button:hover {
+.dashboardBody nav button:hover {
   background-color: #fff;
   color: #003d66;
 }
 
-.dashboardBody .dashboardNav a {
+.dashboardBody nav a {
   color: #fff;
   text-decoration: none;
   border: 2px solid #fff;
@@ -424,7 +424,7 @@ header .hero img {
   transition: all 500ms ease;
 }
 
-.dashboardBody .dashboardNav a:hover {
+.dashboardBody nav a:hover {
   background-color: #fff;
   color: #003d66;
 }
@@ -473,6 +473,69 @@ header .hero img {
 
 .dashboardBody footer a {
   text-decoration: none;
+}
+
+.contactBody {
+  background-color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+.contactBody nav {
+  background-color: #003d66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 40px;
+}
+
+.contactBody nav img {
+  height: 60px;
+}
+
+.contactBody nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.contactBody nav ul a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 0.5rem;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+
+.contactBody nav ul a:hover {
+  background-color: #fff;
+  color: #003d66;
+}
+
+.contactBody h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contactBody h1 span {
+  color: #01a3a5;
+  text-transform: uppercase;
 }
 
 footer {

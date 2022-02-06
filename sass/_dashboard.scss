@@ -2,7 +2,7 @@
   background-color: #fff;
   font-family: $primaryFont;
 
-  .dashboardNav {
+  nav {
     background-color: #003d66;
     @include flex(space-between, center);
     padding: 30px 40px;
