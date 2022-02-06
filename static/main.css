@@ -833,6 +833,37 @@ footer ul a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .contactBody nav {
+    padding: 30px 20px;
+  }
+  .contactBody > h1 {
+    font-size: 2rem;
+    padding: 40px 20px 0;
+  }
+  .contactBody .contact {
+    margin-bottom: 5rem;
+  }
+  .contactBody .contact > div {
+    margin-bottom: 3rem;
+  }
+  .contactBody .contact > div:last-of-type > div {
+    margin-bottom: 3rem;
+  }
+  .contactBody .contact > div > div {
+    padding: 0 30px;
+  }
+  .contactBody footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBody footer ul li {
+    margin: 1rem 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

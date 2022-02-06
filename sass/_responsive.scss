@@ -68,3 +68,42 @@
     }
   }
 }
+
+@include mediaSmall {
+  .contactBody {
+    nav {
+      padding: 30px 20px;
+    }
+
+    > h1 {
+      font-size: 2rem;
+      padding: 40px 20px 0;
+    }
+
+    .contact {
+      margin-bottom: 5rem;
+
+      > div {
+        margin-bottom: 3rem;
+
+        &:last-of-type > div {
+          margin-bottom: 3rem;
+        }
+
+        > div {
+          padding: 0 30px;
+        }
+      }
+    }
+
+    footer {
+      ul {
+        flex-direction: column;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
