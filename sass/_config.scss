@@ -5,3 +5,15 @@ $primaryFont: "Work Sans", sans-serif;
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin mediaMediumLarge {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mediaMediumLow {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}

@@ -494,6 +494,10 @@ header .hero img {
   padding: 30px 40px;
 }
 
+.contactBody nav #toggle {
+  display: none;
+}
+
 .contactBody nav img {
   height: 60px;
 }
@@ -551,6 +555,10 @@ header .hero img {
   margin-bottom: 5rem;
 }
 
+.contactBody .contact > div img {
+  width: 50%;
+}
+
 .contactBody .contact > div > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,7 +573,7 @@ header .hero img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 
 .contactBody .contact > div > div h1 {
@@ -634,6 +642,88 @@ footer ul a {
 footer ul a:hover {
   color: #01a3a5;
   background-color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .contactBody > h1 {
+    padding: 40px 20px;
+  }
+  .contactBody .contact {
+    margin-bottom: 10rem;
+  }
+  .contactBody .contact > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3rem 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactBody .contact > div img {
+    width: 100%;
+  }
+  .contactBody .contact > div:last-of-type {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .contactBody .contact > div:last-of-type > div {
+    margin-bottom: 5rem;
+  }
+  .contactBody .contact > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactBody .contact > div > div p {
+    text-align: center;
+    max-width: 800px;
+  }
+  .contactBody footer {
+    padding: 50px 20px;
+  }
+  .contactBody footer img {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contactBody nav #toggle {
+    display: block;
+  }
+  .contactBody nav ul {
+    display: none;
+    cursor: pointer;
+  }
+  .contactBody footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBody footer img {
+    margin-bottom: 4rem;
+  }
 }
 
 * {

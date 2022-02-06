@@ -7,6 +7,10 @@
     @include flex(space-between, center);
     padding: 30px 40px;
 
+    #toggle {
+      display: none;
+    }
+
     img {
       height: 60px;
     }
@@ -48,10 +52,14 @@
       @include flex(space-between, flex-start);
       margin-bottom: 5rem;
 
+      img {
+        width: 50%;
+      }
+
       > div {
         @include flex(space-between, flex-start);
         flex-direction: column;
-        padding: 20px 50px;
+        padding: 0 50px;
 
         h1 {
           font-size: 2rem;
