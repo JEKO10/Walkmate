@@ -48,9 +48,10 @@
 @include mediaMediumLow {
   .contactBody {
     nav {
-      #toggle {
+      .toggle {
         display: block;
       }
+
       ul {
         display: none;
         cursor: pointer;
