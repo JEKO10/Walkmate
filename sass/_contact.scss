@@ -32,7 +32,7 @@
     }
   }
 
-  h1 {
+  > h1 {
     font-size: 3rem;
     text-align: center;
     padding: 40px 0;
@@ -41,5 +41,38 @@
       color: #01a3a5;
       text-transform: uppercase;
     }
+  }
+
+  .contact {
+    > div {
+      @include flex(space-between, flex-start);
+      margin-bottom: 5rem;
+
+      > div {
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+        padding: 20px 50px;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          max-width: 600px;
+          padding: 25px 0;
+
+          span {
+            text-transform: uppercase;
+            color: #01a3a5;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #000;
   }
 }

@@ -527,15 +527,65 @@ header .hero img {
   color: #003d66;
 }
 
-.contactBody h1 {
+.contactBody > h1 {
   font-size: 3rem;
   text-align: center;
   padding: 40px 0;
 }
 
-.contactBody h1 span {
+.contactBody > h1 span {
   color: #01a3a5;
   text-transform: uppercase;
+}
+
+.contactBody .contact > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.contactBody .contact > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 50px;
+}
+
+.contactBody .contact > div > div h1 {
+  font-size: 2rem;
+}
+
+.contactBody .contact > div > div p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  padding: 25px 0;
+}
+
+.contactBody .contact > div > div p span {
+  text-transform: uppercase;
+  color: #01a3a5;
+  font-weight: 700;
+}
+
+.contactBody footer {
+  background-color: #000;
 }
 
 footer {
