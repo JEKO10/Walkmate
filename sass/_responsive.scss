@@ -1,4 +1,26 @@
+@include mediaLarge {
+  header .hero h1 {
+    font-size: 4.5rem;
+  }
+}
+
 @include mediaMediumLarge {
+  header .hero {
+    padding: 80px 30px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 55%;
+    }
+  }
+
   .contactBody {
     > h1 {
       padding: 40px 20px;
@@ -45,7 +67,47 @@
   }
 }
 
+@include mediaMedium {
+  header {
+    nav {
+      .toggle {
+        display: block;
+      }
+
+      ul {
+        display: none;
+        cursor: pointer;
+      }
+    }
+
+    .hero {
+      @include flex(center, center);
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 30px;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 750px;
+      }
+
+      img {
+        width: 100%;
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
 @include mediaMediumLow {
+  header .hero h1 {
+    font-size: 4rem;
+  }
+
   .contactBody {
     nav {
       .toggle {
@@ -70,6 +132,24 @@
 }
 
 @include mediaSmall {
+  header {
+    nav {
+      padding: 30px 20px;
+    }
+
+    .hero {
+      padding: 30px 30px;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
   .contactBody {
     nav {
       padding: 30px 20px;

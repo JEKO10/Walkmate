@@ -24,6 +24,9 @@
           <li><a href="{{ url_for('login') }}">Log in</a></li>
           <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
+        <div class="toggle">
+          <div></div>
+        </div>
       </nav>
       <section class="hero">
         <div>
@@ -146,6 +149,13 @@
         <li><a href="{{ url_for('register') }}">Register</a></li>
       </ul>
     </footer>
+    <section class="sidebar">
+      <ul>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('login') }}">Log in</a></li>
+        <li><a href="{{ url_for('register') }}">Register</a></li>
+      </ul>
+    </section>
     <script>
       AOS.init();
     </script>

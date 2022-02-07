@@ -89,3 +89,9 @@
   top: 0;
   left: 0;
 }
+
+@include mediaSmall {
+  .sidebar {
+    min-width: 100vw;
+  }
+}

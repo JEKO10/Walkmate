@@ -116,7 +116,7 @@ header .hero p span {
 }
 
 header .hero img {
-  height: 450px;
+  width: 50%;
 }
 
 .about {
@@ -751,7 +751,31 @@ footer ul a:hover {
   left: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .sidebar {
+    min-width: 100vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .hero h1 {
+    font-size: 4.5rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  header .hero {
+    padding: 80px 30px;
+  }
+  header .hero h1 {
+    font-size: 3rem;
+  }
+  header .hero p {
+    font-size: 1rem;
+  }
+  header .hero img {
+    width: 55%;
+  }
   .contactBody > h1 {
     padding: 40px 20px;
   }
@@ -805,7 +829,48 @@ footer ul a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  header nav .toggle {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+    cursor: pointer;
+  }
+  header .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+  header .hero h1 {
+    font-size: 5rem;
+  }
+  header .hero p {
+    font-size: 1.2rem;
+    max-width: 750px;
+  }
+  header .hero img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+
 @media screen and (max-width: 576px) {
+  header .hero h1 {
+    font-size: 4rem;
+  }
   .contactBody nav .toggle {
     display: block;
   }
@@ -834,6 +899,18 @@ footer ul a:hover {
 }
 
 @media screen and (max-width: 480px) {
+  header nav {
+    padding: 30px 20px;
+  }
+  header .hero {
+    padding: 30px 30px;
+  }
+  header .hero h1 {
+    font-size: 3rem;
+  }
+  header .hero p {
+    font-size: 1rem;
+  }
   .contactBody nav {
     padding: 30px 20px;
   }
