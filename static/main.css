@@ -173,7 +173,8 @@ header .hero img {
 }
 
 .about > div #walking {
-  height: 350px;
+  width: 40%;
+  padding: 0 10px;
   border-radius: 5px;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 44, 0.7)), to(rgba(40, 58, 44, 0.6)));
   -webkit-mask-image: linear-gradient(to bottom, rgba(40, 58, 44, 0.7) 0%, rgba(40, 58, 44, 0.6) 100%);
@@ -776,6 +777,33 @@ footer ul a:hover {
   header .hero img {
     width: 55%;
   }
+  .about {
+    padding: 30px 50px;
+  }
+  .about > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    margin: 1rem auto 2rem auto;
+  }
+  .about > div div:first-of-type {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about > div #walking {
+    grid-column: span 2;
+    min-width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+  }
+  .about > div .free {
+    grid-column: span 2;
+    min-width: 100%;
+    margin-top: 3rem;
+  }
   .contactBody > h1 {
     padding: 40px 20px;
   }
@@ -865,6 +893,43 @@ footer ul a:hover {
     width: 100%;
     margin: 2rem 0;
   }
+  .about {
+    padding: 30px 50px;
+  }
+  .about h1 {
+    font-size: 4rem;
+  }
+  .about p {
+    font-size: 1rem;
+    max-width: 200px;
+  }
+  .about > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    margin: 1rem auto 2rem auto;
+  }
+  .about > div > div {
+    width: 45vw;
+  }
+  .about > div div:first-of-type {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about > div #walking {
+    grid-column: span 2;
+    min-width: 90%;
+    border-radius: 20px;
+    margin: 0 auto 3rem;
+  }
+  .about > div .free {
+    grid-column: span 2;
+    min-width: 100%;
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -896,6 +961,35 @@ footer ul a:hover {
   .contactBody footer img {
     margin-bottom: 4rem;
   }
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .about > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about > div div {
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+  .about > div #walking {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -910,6 +1004,12 @@ footer ul a:hover {
   }
   header .hero p {
     font-size: 1rem;
+  }
+  .about {
+    padding: 30px 30px;
+  }
+  .about h1 {
+    font-size: 3rem;
   }
   .contactBody nav {
     padding: 30px 20px;

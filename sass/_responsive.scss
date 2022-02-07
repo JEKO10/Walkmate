@@ -21,6 +21,34 @@
     }
   }
 
+  .about {
+    padding: 30px 50px;
+
+    > div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      width: 100%;
+      margin: 1rem auto 2rem auto;
+
+      & div:first-of-type {
+        order: 1;
+      }
+
+      #walking {
+        grid-column: span 2;
+        min-width: 100%;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+      }
+
+      .free {
+        grid-column: span 2;
+        min-width: 100%;
+        margin-top: 3rem;
+      }
+    }
+  }
+
   .contactBody {
     > h1 {
       padding: 40px 20px;
@@ -101,6 +129,47 @@
       }
     }
   }
+
+  .about {
+    padding: 30px 50px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 200px;
+    }
+
+    > div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      width: 100%;
+      margin: 1rem auto 2rem auto;
+
+      > div {
+        width: 45vw;
+      }
+
+      & div:first-of-type {
+        order: 1;
+      }
+
+      #walking {
+        grid-column: span 2;
+        min-width: 90%;
+        border-radius: 20px;
+        margin: 0 auto 3rem;
+      }
+
+      .free {
+        grid-column: span 2;
+        min-width: 100%;
+        margin-top: 3rem;
+      }
+    }
+  }
 }
 
 @include mediaMediumLow {
@@ -129,6 +198,31 @@
       }
     }
   }
+
+  .about {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 100%;
+    }
+
+    > div {
+      @include flex(center, center);
+      flex-direction: column;
+
+      div {
+        margin: 1.5rem 0;
+        width: 100%;
+      }
+
+      #walking {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @include mediaSmall {
@@ -147,6 +241,14 @@
       p {
         font-size: 1rem;
       }
+    }
+  }
+
+  .about {
+    padding: 30px 30px;
+
+    h1 {
+      font-size: 3rem;
     }
   }
 
