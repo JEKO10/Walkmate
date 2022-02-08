@@ -255,12 +255,13 @@ header .hero img {
   height: 900px;
   font-family: "Noto Serif Display", serif;
   background: url("./images/end.jpg") center/cover no-repeat;
+  overflow-x: hidden;
 }
 
 .end img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   opacity: 0.9;
@@ -268,19 +269,25 @@ header .hero img {
 
 .end h1 {
   position: absolute;
-  left: 30%;
+  left: 0;
   bottom: 20%;
   font-size: 3rem;
   font-weight: 400;
   font-style: italic;
+  min-width: 100%;
+  text-align: center;
+  padding: 0 15px;
 }
 
 .end h2 {
   position: absolute;
-  left: 40%;
+  left: 0;
   bottom: 15%;
   font-weight: 600;
   font-style: italic;
+  min-width: 100%;
+  text-align: center;
+  padding: 0 10px;
 }
 
 .register {
@@ -803,7 +810,7 @@ footer ul a:hover {
     margin-top: 3rem;
   }
   .customers {
-    padding: 10px 30px 30px;
+    padding: 10px 30px 200px;
   }
   .customers h1 {
     padding: 10px 0 30px 0;
@@ -941,6 +948,12 @@ footer ul a:hover {
     min-width: 100%;
     margin-top: 3rem;
   }
+  .end h1 {
+    bottom: 15%;
+  }
+  .end h2 {
+    bottom: 10%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1030,6 +1043,10 @@ footer ul a:hover {
   .about h1 {
     font-size: 3rem;
   }
+  .customers {
+    background-color: #fff;
+    padding: 10px 30px 300px;
+  }
   .customers h1 {
     font-size: 3rem;
   }
@@ -1038,6 +1055,16 @@ footer ul a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .end {
+    background: url("./images/endBg.jpg") center/cover no-repeat;
+  }
+  .end h1 {
+    bottom: 13%;
+    font-size: 2.5rem;
+  }
+  .end h2 {
+    bottom: 8%;
   }
   .contactBody nav {
     padding: 30px 20px;

@@ -59,7 +59,7 @@
   }
 
   .customers {
-    padding: 10px 30px 30px;
+    padding: 10px 30px 200px;
 
     h1 {
       padding: 10px 0 30px 0;
@@ -195,6 +195,16 @@
       }
     }
   }
+
+  .end {
+    h1 {
+      bottom: 15%;
+    }
+
+    h2 {
+      bottom: 10%;
+    }
+  }
 }
 
 @include mediaMediumLow {
@@ -278,12 +288,28 @@
   }
 
   .customers {
+    background-color: #fff;
+    padding: 10px 30px 300px;
+
     h1 {
       font-size: 3rem;
     }
 
     .container {
       flex-direction: column;
+    }
+  }
+
+  .end {
+    background: url("./images/endBg.jpg") center/cover no-repeat;
+
+    h1 {
+      bottom: 13%;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      bottom: 8%;
     }
   }
 
