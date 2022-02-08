@@ -175,7 +175,7 @@ header .hero img {
 .about > div #walking {
   width: 40%;
   padding: 0 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 44, 0.7)), to(rgba(40, 58, 44, 0.6)));
   -webkit-mask-image: linear-gradient(to bottom, rgba(40, 58, 44, 0.7) 0%, rgba(40, 58, 44, 0.6) 100%);
           mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 44, 0.7)), to(rgba(40, 58, 44, 0.6)));
@@ -216,22 +216,13 @@ header .hero img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.customers .container > article > div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.customers .container > article > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .customers .container > article h2 {
@@ -762,6 +753,13 @@ footer ul a:hover {
   header .hero h1 {
     font-size: 4.5rem;
   }
+  .customers {
+    padding: 30px 30px;
+  }
+  .customers img {
+    height: 160px;
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -796,13 +794,32 @@ footer ul a:hover {
   .about > div #walking {
     grid-column: span 2;
     min-width: 100%;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     border-radius: 20px;
   }
   .about > div .free {
     grid-column: span 2;
     min-width: 100%;
     margin-top: 3rem;
+  }
+  .customers {
+    padding: 10px 30px 30px;
+  }
+  .customers h1 {
+    padding: 10px 0 30px 0;
+  }
+  .customers img {
+    margin: 0;
+    width: 100%;
+  }
+  .customers .container article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .customers .container article > div {
+    margin: 1.5rem 0;
   }
   .contactBody > h1 {
     padding: 40px 20px;
@@ -919,12 +936,6 @@ footer ul a:hover {
         -ms-flex-order: 1;
             order: 1;
   }
-  .about > div #walking {
-    grid-column: span 2;
-    min-width: 90%;
-    border-radius: 20px;
-    margin: 0 auto 3rem;
-  }
   .about > div .free {
     grid-column: span 2;
     min-width: 100%;
@@ -987,8 +998,16 @@ footer ul a:hover {
     margin: 1.5rem 0;
     width: 100%;
   }
-  .about > div #walking {
-    width: 100%;
+  .customers .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1010,6 +1029,15 @@ footer ul a:hover {
   }
   .about h1 {
     font-size: 3rem;
+  }
+  .customers h1 {
+    font-size: 3rem;
+  }
+  .customers .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contactBody nav {
     padding: 30px 20px;

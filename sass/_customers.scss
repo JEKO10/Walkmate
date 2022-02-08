@@ -10,10 +10,9 @@
     > article {
       @include flex(center, center);
       text-align: center;
-      flex-direction: column;
 
       > div {
-        @include flex(center, center);
+        flex-direction: column;
       }
 
       h2 {

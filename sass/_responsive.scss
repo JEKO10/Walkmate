@@ -2,6 +2,15 @@
   header .hero h1 {
     font-size: 4.5rem;
   }
+
+  .customers {
+    padding: 30px 30px;
+
+    img {
+      height: 160px;
+      width: 65%;
+    }
+  }
 }
 
 @include mediaMediumLarge {
@@ -37,7 +46,7 @@
       #walking {
         grid-column: span 2;
         min-width: 100%;
-        margin-bottom: 3rem;
+        margin: 0 auto 3rem;
         border-radius: 20px;
       }
 
@@ -45,6 +54,29 @@
         grid-column: span 2;
         min-width: 100%;
         margin-top: 3rem;
+      }
+    }
+  }
+
+  .customers {
+    padding: 10px 30px 30px;
+
+    h1 {
+      padding: 10px 0 30px 0;
+    }
+
+    img {
+      margin: 0;
+      width: 100%;
+    }
+
+    .container {
+      article {
+        flex-direction: column;
+
+        > div {
+          margin: 1.5rem 0;
+        }
       }
     }
   }
@@ -156,13 +188,6 @@
         order: 1;
       }
 
-      #walking {
-        grid-column: span 2;
-        min-width: 90%;
-        border-radius: 20px;
-        margin: 0 auto 3rem;
-      }
-
       .free {
         grid-column: span 2;
         min-width: 100%;
@@ -217,11 +242,11 @@
         margin: 1.5rem 0;
         width: 100%;
       }
-
-      #walking {
-        width: 100%;
-      }
     }
+  }
+
+  .customers .container {
+    @include flex(space-between, center);
   }
 }
 
@@ -249,6 +274,16 @@
 
     h1 {
       font-size: 3rem;
+    }
+  }
+
+  .customers {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .container {
+      flex-direction: column;
     }
   }
 
