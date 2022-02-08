@@ -831,6 +831,9 @@ footer ul a:hover {
   .register img {
     display: none;
   }
+  footer {
+    padding: 90px 30px;
+  }
   .contactBody > h1 {
     padding: 40px 20px;
   }
@@ -964,6 +967,19 @@ footer ul a:hover {
     font-size: 2.5rem;
     margin-bottom: 1rem 0;
   }
+  footer {
+    padding: 50px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer img {
+    margin-bottom: 4rem;
+  }
+  footer ul a {
+    margin: 0 5px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1040,6 +1056,13 @@ footer ul a:hover {
   }
   .register h2 {
     font-size: 1.5rem;
+  }
+  footer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer ul li {
+    margin-bottom: 2rem;
   }
 }
 
