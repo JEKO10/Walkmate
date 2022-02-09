@@ -11,6 +11,14 @@
       width: 65%;
     }
   }
+
+  .dashboardBody .dashboard {
+    padding: 0 50px;
+
+    .bestCustomers {
+      @include flex(space-between, center);
+    }
+  }
 }
 
 @include mediaMediumLarge {
@@ -91,6 +99,15 @@
     padding: 90px 30px;
   }
 
+  .dashboardBody .dashboard {
+    padding: 0 30px;
+
+    .bestCustomers img {
+      height: 160px;
+      width: 100%;
+    }
+  }
+
   .contactBody {
     > h1 {
       padding: 40px 20px;
@@ -124,14 +141,6 @@
             max-width: 800px;
           }
         }
-      }
-    }
-
-    footer {
-      padding: 50px 20px;
-
-      img {
-        height: 60px;
       }
     }
   }
@@ -225,6 +234,24 @@
     }
   }
 
+  .dashboardBody {
+    nav {
+      padding: 30px 20px;
+    }
+
+    .bestCustomers {
+      flex-wrap: wrap;
+
+      div {
+        margin: 2rem 0;
+      }
+
+      img {
+        padding: 0 10px;
+      }
+    }
+  }
+
   footer {
     padding: 50px 30px;
     flex-direction: column;
@@ -253,15 +280,6 @@
       ul {
         display: none;
         cursor: pointer;
-      }
-    }
-
-    footer {
-      @include flex(center, center);
-      flex-direction: column;
-
-      img {
-        margin-bottom: 4rem;
       }
     }
   }
@@ -300,6 +318,19 @@
 
     h2 {
       font-size: 1.5rem;
+    }
+  }
+
+  .dashboardBody nav {
+    padding: 15px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+
+    img {
+      grid-column: span 2;
+      margin: 0 auto;
+      margin-bottom: 3rem;
     }
   }
 
@@ -379,6 +410,30 @@
     }
   }
 
+  .dashboardBody {
+    nav {
+      @include flex(center, center);
+      flex-direction: column;
+
+      a {
+        margin-top: 2rem;
+      }
+    }
+
+    .dashboard {
+      padding: 0 20px;
+
+      .bestCustomers {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    footer {
+      padding: 60px 10px;
+    }
+  }
+
   .contactBody {
     nav {
       padding: 30px 20px;
@@ -401,16 +456,6 @@
 
         > div {
           padding: 0 30px;
-        }
-      }
-    }
-
-    footer {
-      ul {
-        flex-direction: column;
-
-        li {
-          margin: 1rem 0;
         }
       }
     }

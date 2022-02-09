@@ -767,6 +767,20 @@ footer ul a:hover {
     height: 160px;
     width: 65%;
   }
+  .dashboardBody .dashboard {
+    padding: 0 50px;
+  }
+  .dashboardBody .dashboard .bestCustomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -834,6 +848,13 @@ footer ul a:hover {
   footer {
     padding: 90px 30px;
   }
+  .dashboardBody .dashboard {
+    padding: 0 30px;
+  }
+  .dashboardBody .dashboard .bestCustomers img {
+    height: 160px;
+    width: 100%;
+  }
   .contactBody > h1 {
     padding: 40px 20px;
   }
@@ -878,12 +899,6 @@ footer ul a:hover {
   .contactBody .contact > div > div p {
     text-align: center;
     max-width: 800px;
-  }
-  .contactBody footer {
-    padding: 50px 20px;
-  }
-  .contactBody footer img {
-    height: 60px;
   }
 }
 
@@ -967,6 +982,19 @@ footer ul a:hover {
     font-size: 2.5rem;
     margin-bottom: 1rem 0;
   }
+  .dashboardBody nav {
+    padding: 30px 20px;
+  }
+  .dashboardBody .bestCustomers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dashboardBody .bestCustomers div {
+    margin: 2rem 0;
+  }
+  .dashboardBody .bestCustomers img {
+    padding: 0 10px;
+  }
   footer {
     padding: 50px 30px;
     -webkit-box-orient: vertical;
@@ -992,24 +1020,6 @@ footer ul a:hover {
   .contactBody nav ul {
     display: none;
     cursor: pointer;
-  }
-  .contactBody footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactBody footer img {
-    margin-bottom: 4rem;
   }
   .about h2 {
     font-size: 1.5rem;
@@ -1056,6 +1066,19 @@ footer ul a:hover {
   }
   .register h2 {
     font-size: 1.5rem;
+  }
+  .dashboardBody nav {
+    padding: 15px 20px 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+  }
+  .dashboardBody nav img {
+    grid-column: span 2;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
   footer ul {
     -ms-flex-wrap: wrap;
@@ -1117,6 +1140,38 @@ footer ul a:hover {
   .register h2 {
     font-size: 1rem;
   }
+  .dashboardBody nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboardBody nav a {
+    margin-top: 2rem;
+  }
+  .dashboardBody .dashboard {
+    padding: 0 20px;
+  }
+  .dashboardBody .dashboard .bestCustomers {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dashboardBody footer {
+    padding: 60px 10px;
+  }
   .contactBody nav {
     padding: 30px 20px;
   }
@@ -1135,15 +1190,6 @@ footer ul a:hover {
   }
   .contactBody .contact > div > div {
     padding: 0 30px;
-  }
-  .contactBody footer ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactBody footer ul li {
-    margin: 1rem 0;
   }
 }
 
