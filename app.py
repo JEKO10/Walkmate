@@ -70,7 +70,7 @@ def login():
                 login_user(user, remember=form.remember.data)
                 return redirect(url_for('dashboard'))
 
-        return '<h1>Invalid username or password</h1>'
+        return redirect(url_for('error'))
 
     return render_template("login.html", form=form)
 
@@ -102,6 +102,11 @@ def dashboard():
         inputValue = "searched location"
     userLocation = User.query.filter_by(location=inputValue).all()
     return render_template('dashboard.html', users=users, name=current_user.username, userLocation=userLocation, inputValue=inputValue)
+
+
+@app.route("/error")
+def error():
+    return render_template("error.html")
 
 
 @app.route("/contact")
