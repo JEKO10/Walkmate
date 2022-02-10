@@ -1,6 +1,7 @@
 {% extends "bootstrap/base.html" %} {% import "bootstrap/wtf.html" as wtf %} {%
 block title %} Walkmate - Login {% endblock %} {% block styles %} {{super()}}
 <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='logo.ico') }}" />
 {% endblock %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
