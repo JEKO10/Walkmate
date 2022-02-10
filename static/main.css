@@ -591,6 +591,54 @@ header .hero img {
   background-color: #000;
 }
 
+.error {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.7))), url("./images/bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.7)), url("./images/bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 140px 0;
+  color: #fff;
+  -webkit-animation: opacity 1s linear;
+          animation: opacity 1s linear;
+}
+
+.error h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.error a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-decoration: none;
+  background-color: #01a3a5;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.error a:hover {
+  text-decoration: underline;
+  background: none;
+  border: 2px solid #01a3a5;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
